@@ -1,18 +1,15 @@
 # encoding: utf-8
-"""
-@author:  sherlock
-@contact: sherlockliao01@gmail.com
-"""
+
 
 import sys
 import unittest
 
 sys.path.append('.')
-from config.defaults import _C as cfg
-from data.transforms import build_transforms
-from data.build import build_dataset
-from solver.build import make_optimizer
-from modeling import build_model
+from tsf_baselines.config.defaults import _C as cfg
+from tsf_baselines.data.transforms import build_transforms
+from tsf_baselines.data import build_dataset
+from tsf_baselines.solver.build import make_optimizer
+from tsf_baselines.modeling import build_model
 
 
 class TestDataSet(unittest.TestCase):
