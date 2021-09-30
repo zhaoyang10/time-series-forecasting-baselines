@@ -69,6 +69,19 @@ The config and scripts related codes are placed out of **tsf_baselines** directo
      ├── test_data_sampler.py
 ```
 
+# Results
+
+All the results are the average of 5 runs in the same setting.
+
+- Informer - univariate forecasting
+
+| Dataset     | Setting |  MSE   |   MAE  |  RMSE |  MAPE  |  MSPE |
+| :---        |  :----: | :----: |  :---: | :---: |  :---: | :---: |
+| ETTm1       |    24   | 0.024  |  0.116 | 0.153 |  0.090 | 0.015 |
+| ETTm1       |    48   | 0.056  |  0.182 | 0.237 |  0.139 | 0.033 |
+| ETTm1       |    96   | 0.215  |  0.387 | 0.462 |  0.276 | 0.100 |
+| ETTm1       |    288  | 0.362  |  0.523 | 0.601 |  0.380 | 0.182 |
+| ETTm1       |    672  | 0.527  |  0.646 | 0.725 |  0.468 | 0.271 |
 
 # Future Work
 - Complete the Informer part and give a results table of this reimplemetation.

@@ -30,7 +30,7 @@ class Algorithm(torch.nn.Module):
         self.device = self._acquire_device()
 
     def _acquire_device(self):
-        print('self.cfg = {}'.format(self.cfg))
+        # print('self.cfg = {}'.format(self.cfg))
         if self.cfg.MODEL.USE_GPU:
             # os.environ["CUDA_VISIBLE_DEVICES"] = str(self.cfg.MODEL.DEVICE) if not self.args.use_multi_gpu else self.args.devices
             device = torch.device('cuda:{}'.format(self.cfg.MODEL.DEVICE))

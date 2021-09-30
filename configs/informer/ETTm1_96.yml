@@ -3,9 +3,9 @@ ALGORITHM:
 
 MODEL:
   NAME: 'Informer'
-  SEQ_LEN: 96
-  LABEL_LEN: 48
-  PRED_LEN: 24
+  SEQ_LEN: 384
+  LABEL_LEN: 384
+  PRED_LEN: 96
   E_LAYERS: 2
   D_LAYERS: 1
   ATTN: 'prob'
@@ -19,6 +19,6 @@ DATASETS:
   FEATURES: 'S'
 
 SOLVER:
-  MAX_EPOCHS: 1
+  MAX_EPOCHS: 6
 
-OUTPUT_DIR: "./output/debug_ETTm1_24"
+OUTPUT_DIR: "./output/ETTm1_96"

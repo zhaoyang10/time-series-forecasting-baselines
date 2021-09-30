@@ -19,6 +19,6 @@ DATASETS:
   FEATURES: 'S'
 
 SOLVER:
-  MAX_EPOCHS: 1
+  MAX_EPOCHS: 6
 
-OUTPUT_DIR: "./output/debug_ETTm1_24"
+OUTPUT_DIR: "./output/ETTm1_24"
